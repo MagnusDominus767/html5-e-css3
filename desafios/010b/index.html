@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafios 010</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: beige;
+            margin: 0px;
+        }
+
+        header {
+            background-image: linear-gradient(to bottom, rgb(187, 255, 0), rgb(247, 247, 247));
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+            text-shadow: 2px 2px 0px rgb(255, 255, 255);
+        }
+
+        nav {
+            background-color: rgb(157, 178, 197);
+            padding: 3px;
+            box-shadow: 5px 3px 7px 1px black;
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: azure;
+        }
+
+        nav >a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin-top: 2%;
+            margin-right: 10%;
+            margin-bottom: 2%;
+            margin-left: 10%;
+            border-radius: 30px 0px 30px 0px;
+        }
+
+        article {
+            background-color: rgb(247, 247, 247);
+            padding: 5px;
+        }
+
+        article > aside {
+            background-color: rgb(165, 165, 165);
+        }
+
+        footer {
+            background-color: rgb(0, 0, 0);
+            color: rgb(5, 255, 18);
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        header > h1, h5 {
+            text-align: center;
+        }
+
+       article > img {
+            max-width: 95%;
+            margin: auto;
+            display: block;
+        }
+
+        article > iframe {
+            margin: auto;
+            display: block;
+        }
+
+        h2 {
+            
+            background-image: linear-gradient(to right, rgb(187, 255, 0), rgb(247, 247, 247));
+        }
+
+        div {
+            background-color:rgb(255, 242, 168) ;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            box-shadow: 3px 4px 20px -14px black;
+            padding-right: 8px;
+            padding-left: 8px;
+        }
+        
+        div > ul {
+            list-style-type: '\2714\0020\0020';
+            columns: 2;
+            list-style-position: inside;
+        }
+
+        div > h3 {
+            background-color: rgb(197, 208, 218);
+            text-align: center;
+        }
+
+        div.video {
+            position: relative;
+            height: 0px;
+            /*margin-left: -20px;
+            margin-right: -20px;*/
+            margin-bottom: 15px;
+            padding-bottom: 59%;
+        }
+
+        div.video > iframe {
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            width: 90%;
+            height: 90%;
+        }
+
+        p {
+            line-height: 1.5em;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Proprio Site</h1>
+        <h5>Nem tudo oque voce tem que saber de mim </h5>
+        <nav>
+            <a href="https://www.google.com/webhp?source=search_app">Talvez</a>
+            <a href="#">isso</a>
+            <a href="#">não</a>
+            <a href="#">va</a>
+            <a href="#">ate</a>
+            <a href="#">lugar</a>
+            <a href="#">algum</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos">
+            <p>Oque esta acontecendo.........................Ou não</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias das Coisas</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus libero repellendus recusandae. Quia repudiandae aliquid rerum enim, adipisci fugiat corporis aut ea fugit qui hic perspiciatis velit, eligendi ullam ad!Lorem  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum maxime, alias sapiente qui architecto tempora molestias assumenda iste aliquam libero facilis, dignissimos, quos nostrum. Mollitia dolores sapiente distinctio sit eligendi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, blanditiis! Excepturi repellendus quasi sint quos sed debitis distinctio voluptatum ut, at nobis iusto, temporibus animi. Iste aperiam nulla veniam odit?
+                </p>
+                <aside>
+                    <p>Artigo Feito por Alguem</p>
+                </aside>
+            </article>
+            <article>
+                <h2>Algumas Belas Imagens..... ou nem tanto assim</h2>
+                <img src="imagens/dan-droids.png" alt="Nada a dizer" >
+
+                <p>Essas foram uma das primeiras versões do icone do android. O BugDroid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores atque odit vero consequatur sequi voluptatem cumque unde ipsa omnis quisquam vitae, consequuntur sunt aperiam at voluptates quam quaerat, iste a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex corporis natus delectus est quis, quam non. Perferendis, distinctio, odit quod adipisci quam fuga voluptates nisi eius molestias, illum assumenda ducimus?</p>
+
+                <h2>A mente por traz da marca.</h2>
+
+                <img src="imagens/irina-blok.jpg" alt="Agora sim uma bela imagem">
+
+                <p>Essa foi a mulher que fez o disaner dele. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque labore voluptatibus corporis nostrum esse, nesciunt deserunt qui repellat nam ad a harum, rem eum facilis magnam, quae odit voluptate molestiae!</p>
+
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/-ewdmNxwZGk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
+                <p>Ela foi tentando ate finalmente chegar na versão final que conhecemos hoje. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, reiciendis. Expedita nostrum dolor unde, ullam quasi velit nisi assumenda explicabo voluptates eveniet odit placeat sint nobis repudiandae aliquid consectetur repellendus!</p>
+            </article>
+
+            <div>
+                <h3>Ainda Tem um pouco mais...</h3>
+                <p>De uma olhada tbm nisso aqui. Acho q vc vai gostar.</p>
+                    <ul>
+                        <li>1.5 - <a href="#">Alguma</a></li>
+                        <li>1.8 - <a href="#">Outra</a></li>
+                        <li>3.9 - <a href="#">Coisa</a></li>
+                        <li><a href="#">Outra</a></li>
+                        <li><a href="#">Lista</a></li>
+                        <li><a href="#">BlaBla</a></li>
+                    </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod vel molestiae a autem facilis? Voluptatem sed quam cupiditate in fuga blanditiis fugit nobis? Distinctio beatae optio officiis possimus ullam modi. lo</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Em Desenvolvimento</p>
+    </footer>
+</body>
+</html>
