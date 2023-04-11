@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML</title>
+</head>
+<body>
+    <h1>Imagem Dinamica</h1>
+    <p>Teste em varias resoluções</p>
+
+    <picture>
+        <source media="(max-width: 700px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem Flexivel">
+    </picture>
+    <!--É importante que existe uma ordem entre os <source>, e nessa nossa configuração, 
+    os itens mais acima sejam os menores tamanhos para max-width e que os seguintes 
+    sejam maiores, de forma crescente. O último item dentro de <picture> deve ser a 
+    imagem padrão-->
+    <!--Geralmente o "media" vem por padrão no min, porem foi mudado para max-->
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Q57Xz-38G_U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <h1>Reproduzindo audio</h1>
+
+    <p>Vamos testar alguns audios</p>
+    <audio src="midia/Warzone.mp3" controls autoplay></audio>
+    <!--Forma mais simples de por audio-->
+    &nbsp;
+    <p>Outra forma caso um dos arquivos não de certo</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/Contrast.ogg" type="audio/ogg">
+        <source src="midia/Contrast.mp3" type="audio/mpeg">
+        <source src="midia/Contrast.wav" type="audio/wav"><!--Evitar ussar wav pois são arquivos masi pessados-->
+        <p>Infelizmente seu navegador não pode reproduzir o audio. <a href="midia/Contrast.mp3" download="Contrast.mp3" type="audio/mpeg" download="">Clique aqui</a> para fazero dowload</p>
+    </audio>
+</body>
+</html>
