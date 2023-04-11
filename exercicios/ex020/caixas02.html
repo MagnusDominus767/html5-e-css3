@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gruping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: beige;
+            margin: 0px;
+        }
+
+        header {
+            background-color: aquamarine;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: rgb(157, 178, 197);
+            padding: 3px;
+            box-shadow: 5px 3px 7px 1px black;
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: azure;
+        }
+
+        nav >a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 30px 0px 30px 0px;
+        }
+
+        article {
+            background-color: lightgrey;
+            padding: 5px;
+        }
+
+        article > aside {
+            background-color: rgb(165, 165, 165);
+        }
+
+        footer {
+            background-color: rgb(0, 0, 0);
+            color: rgb(5, 255, 18);
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Proprio Site</h1>
+        <h2>Teste</h2>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos">
+            <p>Oque esta acontecendo.........................Ou não</p>
+        </section>
+        <section id="notocias">
+            <article>
+                <h2>Noticias das Coisas</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus libero repellendus recusandae. Quia repudiandae aliquid rerum enim, adipisci fugiat corporis aut ea fugit qui hic perspiciatis velit, eligendi ullam ad!Lorem  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum maxime, alias sapiente qui architecto tempora molestias assumenda iste aliquam libero facilis, dignissimos, quos nostrum. Mollitia dolores sapiente distinctio sit eligendi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, blanditiis! Excepturi repellendus quasi sint quos sed debitis distinctio voluptatum ut, at nobis iusto, temporibus animi. Iste aperiam nulla veniam odit?
+                </p>
+                <aside>
+                    <p>Artigo Feito por Alguem</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Em Desenvolvimento</p>
+    </footer>
+</body>
+</html>
