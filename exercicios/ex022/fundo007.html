@@ -7,17 +7,25 @@
     <title>Img de Fundo</title>
     <style>
         body {
-            height: 100vh;
+
+            /* 
             background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center center;
-            background-repeat: repeat-y;
+            background-repeat: no-repeat;
+            background-attachment: fixed; */
+
+            height: 100vh;
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
             background-size: cover;
         }
-
+        /*
+        Shorthand - Background
+        color > image > position > repeat > [size] > attachment 
+        */
         main {
             background-color: white;
-            width: 400px;
+            max-width: 700px;
             padding: 10px;
             margin: auto;
             border-radius: 10px;
