@@ -22,13 +22,25 @@
             border: 1px solid black;
             padding: 15px;
         }
+
+        col.filmes{
+            background-color: aqua;
+        }
+
+        col.nomes{
+            background-color: blueviolet;
+        }
     </style>
 </head>
 <body>
     <table>
         
         <caption>Filmes</caption>
-
+        <colgroup>
+            <col class="grupo">
+            <col class="nomes">
+            <col class="filmes" span="3">
+        </colgroup>
         <thead>
             <tr>
                 <th scope="col">Grupos</th>
