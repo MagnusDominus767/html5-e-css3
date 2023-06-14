@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +8,12 @@
 <body>
     <h1>Meu primeiro formulario</h1>
     <p>Teste</p>
-    <form>
-        <p>Nome: <input type="text" name="nome" id="nome"> </p>
-        <p>Sobrenome: <input type="text" name="nome" id="nome"> </p>
+    <form action="cadastro.php" method="post" autocomplete="off"> <!--POST: usado em dados sensiveis(de preferencia junto ao HTTPS) e e para envio de arquivos (com mais de 3 mil bitys)-->
+
+        <p> <label for="inome">Nome: </label> <input type="text" name="nome" id="inome"> </p>
+
+        <p> <label for="isobrenome">Sobrenome: </label> <input type="text" name="sobrenome" id="isobrenome"> </p>
+
         <input type="submit" value="Mandar">
     </form>
 </body>
