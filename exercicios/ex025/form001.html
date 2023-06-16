@@ -8,11 +8,22 @@
 <body>
     <h1>Meu primeiro formulario</h1>
     <p>Teste</p>
-    <form action="cadastro.php" method="post" autocomplete="off"> <!--POST: usado em dados sensiveis(de preferencia junto ao HTTPS) e e para envio de arquivos (com mais de 3 mil bitys)-->
+    <form action="cadastro.php" method="post" autocomplete="off"> 
+        <!--
+            POST: usado em dados sensiveis(de preferencia junto ao HTTPS) e para envio de arquivos (com mais de 3 mil bitys)
+        
+            GEt:O método GET é adequado para formulários simples com poucos dados e quando os dados podem ser compartilhados por meio da URL. No entanto, ele não é recomendado para o envio de dados sensíveis ou grandes volumes de dados, pois os dados ficam visíveis na URL e possuem limitações de tamanho.
+        -->
 
-        <p> <label for="inome">Nome: </label> <input type="text" name="nome" id="inome"> </p>
+        <p> 
+            <label for="inome">Nome: </label> 
+            <input type="text" name="nome" id="inome"> 
+        </p>
 
-        <p> <label for="isobrenome">Sobrenome: </label> <input type="text" name="sobrenome" id="isobrenome"> </p>
+        <p> 
+            <label for="isobrenome">Sobrenome: </label> 
+            <input type="text" name="sobrenome" id="isobrenome"> 
+        </p>
 
         <input type="submit" value="Mandar">
     </form>
