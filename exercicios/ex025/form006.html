@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form006</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+<!--Nesse caso o "value" faz com que o input apareça com algum falor predefinido-->
+        <p>
+            <label for="icor">Cor</label>
+            <input type="color" name="cor" id="icor" value="#00ff00">
+        </p>
+
+        <p>
+            <label for="inivel">Nivel de Range</label>
+            <input type="range" name="nivel" id="inivel" min="0" max="10" value="8">
+        </p>
+
+        <p>
+            <label for="ifoto">Foto de exeplo</label>
+            <input type="file" name="foto" id="ifoto">
+            <!--Quando for usar o "file" deve usar (method="POST")-->
+        </p>
+
+        <p>
+            <input type="submit" value="Mandar">
+            <input type="reset" value="Refazer">
+        </p>
+
+    </form>
+</body>
+</html>
