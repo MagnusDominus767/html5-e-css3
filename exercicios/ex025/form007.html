@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form007</title>
+</head>
+<body>
+    <h1>Exeplo</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <p>
+            <label for="iest">Estado</label>
+
+            <select name="est" id="iest">
+
+                <option value="escolha" selected>Escolha o seu</option>
+
+                <optgroup label="Suldeste">
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+
+                <optgroup label="Noedeste">
+                    <option value="MG">Minas Gearis</option>
+                    <option value="etc">etc e tal...</option>
+                </optgroup>
+
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof">Profição</label>
+            <input type="text" name="ptof" id="iprof" list="ilist">
+            <datalist id="ilist">
+                <option value="ADM">Administrador</option>
+                <option>Pro Player</option>
+                <option value="MED">Medico</option>
+                <option>Desenvolvedor</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem</label><br>
+            <textarea name="msg" id="imsg" cols="20" rows="5" placeholder="Mesagem aqui..."></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>
