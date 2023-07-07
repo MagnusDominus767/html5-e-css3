@@ -15,13 +15,27 @@ header {
     background-color: lightgoldenrodyellow;
 }
 
+span#idmenu {
+    background-color: blueviolet;
+    color: whitesmoke;
+    display: block;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+}
+
+span#idmenu:hover {
+    background-color: rgb(192, 125, 255);
+    color: black;
+}
+
 header > h1 {
     padding: 10px;
     text-align: center;
 }
 
 menu {
-    display: block;
+    display: none;
 }
 
 menu > ul {
